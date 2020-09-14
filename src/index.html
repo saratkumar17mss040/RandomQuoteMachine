@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Random Quote Machine - 🤖</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Random Quote Machine - 🤖</title>
+		<link rel="shortcut icon" href="../resources/quote.ico" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<div id="quote-box">
+			<div id="sub-container">
+                <i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+				<span id="text">
+				</span>
+				<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+				<div id="author"></div>
+				<div id="button-container">
+					<button id="btn-twitter">
+						<a
+							id="tweet-quote"
+							title="Tweet this quote!"
+							href="twitter.com/intent/tweet"
+                            ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i
+						></a>
+					</button>
+					<button id="btn-tumblr">
+						<a
+							title="Post this quote on tumblr!"
+							href="https://www.tumblr.com/"
+						><i class="fa fa-tumblr fa-2x" aria-hidden="true"></i></a>
+					</button>
+					<button type="button" id="new-quote">New quote</button>
+				</div>
+			</div>
+		</div>
+		<script src="./app.js"></script>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
 </html>
