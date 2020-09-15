@@ -10,4 +10,4 @@
 - [x] Create a button to generate some random quotes
 - [x] Change the colors of the text and the background to some random colors every time we generate a new quote
 - [x] Set favicon 
-- [ ] Deploy it through surge
+- [x] Deploy it through github pages

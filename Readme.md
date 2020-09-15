@@ -26,7 +26,7 @@ html, css, js
 
 ### Deployment 
 
-I will try to deploy it through surge - it's the first time !
+I will try to deploy it through github pages 
 
 
 
