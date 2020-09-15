@@ -1,3 +1,7 @@
+/* poppins font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* universal selector */
 * {
 	margin: 0px;
 	padding: 0px;
@@ -9,18 +13,19 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: greenyellow;
+	background-color: #000;
 }
 
 #sub-container {
+	position: absolute;
 	height: 400px;
 	width: 1200px;
 	background: #fff;
 	padding: 50px;
 	border-radius: 10px;
 	position: relative;
-	text-align: center;
-	color: greenyellow;
+	justify-self: center;
+	color: #000;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -35,50 +40,169 @@
 	position: relative;
 	width: 32px;
 	height: 32px;
-	background-color: greenyellow;
+	background-color: #000;
 	border: none;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	margin-top: 100px;
 	cursor: pointer;
-	left: 300px;
 	outline: none;
 }
 
 #btn-twitter {
-	margin-left: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
+	width: 50px;
+	height: 50px;
+	border-radius: 8px;
 }
 
 #btn-tumblr {
 	margin-left: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
+	width: 50px;
+	height: 50px;
+	border-radius: 8px;
 }
 
 #new-quote {
-    width: 100px;
-    height: 50px;
-	margin-left: 350px;
+	position: relative;
+	left: 700px;
+	width: 150px;
+	height: 50px;
 	background: #3c65f8;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 12px;
 	border: none;
 	color: #fff;
-    cursor: pointer;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
 }
 
-.fa-twitter,.fa-tumblr {
-    color: #fff !important;
+.fa-twitter,
+.fa-tumblr {
+	color: #fff !important;
 }
 
 #text {
-    font-size: 28px;
+	font-size: 24px;
+	font-family: 'Poppins', sans-serif;
 }
 
 #author {
 	margin-top: 25px;
-	font-size: 24px;
+	font-size: 25px;
+	font-style: italic;
+}
+
+body {
+	background-color: #000;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	#sub-container {
+		width: 300px;
+		height: 600px;
+	}
+	#text {
+		font-size: 16px;
+	}
+
+	#button-container {
+		width: 100px;
+	}
+
+	#author {
+		font-size: 12px;
+	}
+
+	#btn-twitter,
+	#btn-tumblr {
+		left: 0px;
+	}
+
+	.fa.fa-twitter.fa-2x,
+	.fa.fa-tumblr.fa-2x {
+		font-size: 18px !important;
+	}
+
+	#new-quote {
+		left: 150px;
+	}
+
+	#inner-text {
+		font-size: 12px;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#sub-container {
+		width: 300px;
+		height: 500px;
+	}
+	#text {
+		font-size: 16px;
+	}
+
+	#button-container {
+		width: 100px;
+	}
+
+	#author {
+		font-size: 12px;
+	}
+
+	#btn-twitter,
+	#btn-tumblr {
+		left: 0px;
+	}
+
+	.fa.fa-twitter.fa-2x,
+	.fa.fa-tumblr.fa-2x {
+		font-size: 18px !important;
+	}
+
+	#new-quote {
+		left: 130px;
+	}
+
+	#inner-text {
+		font-size: 12px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#sub-container {
+		width: 500px;
+		height: 700px;
+	}
+	#text {
+		font-size: 26px;
+	}
+
+	#button-container {
+		width: 100px;
+	}
+
+	#author {
+		font-size: 18px;
+	}
+
+	#btn-twitter,
+	#btn-tumblr {
+		left: 0px;
+	}
+
+	.fa.fa-twitter.fa-2x,
+	.fa.fa-tumblr.fa-2x {
+		font-size: 18px !important;
+	}
+
+	#new-quote {
+		left: 130px;
+	}
+
+	#inner-text {
+		font-size: 22px;
+	}
 }
